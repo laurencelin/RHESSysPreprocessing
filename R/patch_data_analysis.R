@@ -410,7 +410,9 @@ patch_data_analysis <- function(raw_patch_data,
       Border_perimeter = tp_perimeter,
       Slopes = tp_perimeter * slope_i,
       TotalG = tp_TotalG,
-      Gamma_i = tp_gamma
+      Gamma_i = tp_gamma,
+      Gamma_i_p = tp_perimeter,
+      Gamma_i_d = dist
     )
   }
   close(pb)

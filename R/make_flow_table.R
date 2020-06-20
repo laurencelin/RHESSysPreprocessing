@@ -49,7 +49,7 @@ make_flow_table<-function(flw,output_file,parallel){
             cat("\t")
             n_j<-flw[[i_ind]]$Neighbors[j]
             n_j_ind = elev_order[elev_order[,2] == n_j,4]
-            out_string<-c(flw[[n_j_ind]]$PatchID,flw[[n_j_ind]]$ZoneID,flw[[n_j_ind]]$HillID,flw[[i_ind]]$Gamma_i[j])
+            out_string<-c(flw[[n_j_ind]]$PatchID, flw[[n_j_ind]]$ZoneID, flw[[n_j_ind]]$HillID, flw[[i_ind]]$Gamma_i[j], flw[[i_ind]]$Gamma_i_p[j], flw[[i_ind]]$Gamma_i_d[j]) 
             cat(out_string)
             cat("\n")
           }
